@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:'poppins',sans-serif ;
+}
+
+
+.profile-card img{
+	width: 152px;
+	border-radius: 50%;
+	border:2px solid white;
+	cursor:pointer;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: url(bg.jpg)no-repeat center;
+	background-size: cover;
+
+}
+
+.profile-card{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	gap: 3.5em;
+	padding: 2% 2%;
+	border-radius: 1em;
+	background-color: rgba(148, 148, 148, 0.25);
+    backdrop-filter: blur(20px);
+    border:3px solid white;
+    color: white;
+    width: 300px;
+
+}
+
+.numbers-grid{
+	display: flex;
+	grid-template-columns: repeat(1,1fr);
+	gap: 2.2em;
+
+}
+
+.profile-card .btn-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1ems;
+}
+
+.btn-box button{
+	padding: 12px 25px;
+	font-size: 16px;
+	border-radius:5px;
+	margin-bottom: 1em;
+	cursor: pointer;
+	transition :0.3s ease;
+	border-radius: 2px solid transparent;
+
+}
+
+.btn-box .follow{
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	margin-right: 8px;
+
+}
+
+.btn-box .message{
+	background-color: transparent;
+	border-radius: 2px solid white;
+	color: white;
+	margin-right: 8px;
+	border: 2px solid white;
+
+}
+
+.btn-box .message:hover{
+	background-color: white;
+	color: black;
+
+}
+
+.btn-box .follow:hover{
+	background-color: white;
+	color: black;
+}	
+
+.numbers-grid .box p:first-child{
+	font-weight: 800;
+}
+
+.numbers-grid .box p:last-child{
+	font-weight: 400;
+	opacity: 0.8;
+}
+
+
+.info-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 1em;
+}
+
+.info{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-top: 1.5em;
+
+}
+
+.info p{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+@media(max-width:900px){
+	.profile-card .numbers-grid{
+		display:grid ;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.btn-box button{
+		padding: 12px;
+		font-size: 14px;
+		border-radius: 5px;
+		cursor: pointer;
+		border:2px solid;
+		transition: 0.3s ease;
+
+	}
+}
